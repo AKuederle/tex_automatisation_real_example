@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[fontsize=12pt]{scrextend}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+
+\usepackage{arydshln} % For dashed lines
+
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+
+\usepackage{tabularx}
+
+\renewcommand\thesubsection{\Large \Alph{subsection}.}
+
+\begin{document}
+\include{abstract}
+\include{main}
+\end{document}
