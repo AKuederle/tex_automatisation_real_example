@@ -1,0 +1,7 @@
+#project parameters configuration
+name=Jason
+age=52
+gender=Male
+projectID=PG161022			
+project date=2016/10/21		
+report date=2016/12/22		

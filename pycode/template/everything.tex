@@ -1,0 +1,56 @@
+%!TEX program = xelatex
+% * <tangzhixiong.1989@gmail.com> 2016-12-23T02:13:54.685Z:
+%
+% UTF8 coding and xeLaTeX program are required for my project.
+%
+% ^.
+
+\documentclass[UTF8]{article}
+\usepackage[fontsize=12pt]{scrextend}
+\usepackage[b5paper,margin=1.5cm]{geometry}
+% * <tangzhixiong.1989@gmail.com> 2016-12-23T01:00:55.482Z:
+%
+% in my case, page style is 'b5paper'
+%
+% ^.
+\usepackage{graphicx}
+\graphicspath{images}
+\usepackage{titlesec}
+
+\usepackage{multicol}
+
+
+
+\usepackage{array}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tcolorbox}
+% * <tangzhixiong.1989@gmail.com> 2016-12-23T07:54:24.268Z:
+%
+% used in the abstract tables.
+% may bot be a good solution,  since the head text lines did not fit well in the yellow box.
+% perhaps a \begin{table}...\end{table} is good enough.
+%
+% ^.
+
+\usepackage{tabularx}
+\usepackage{arydshln} % For dashed lines
+\setlength{\arrayrulewidth}{3pt}
+\setlength{\tabcolsep}{0pt}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\definecolor{myBlue}{RGB}{0,196,179}
+\definecolor{myYellow}{RGB}{255,153,0}
+\newcolumntype{H}{>{\columncolor{myBlue}}c}
+
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+
+
+
+\renewcommand\thesubsection{\Large \Alph{subsection}.}
+
+\begin{document}
+\BLOCK{include './cover.tex'}
+\BLOCK{include './abstract.tex'}
+\BLOCK{include './main.tex'}
+\end{document}

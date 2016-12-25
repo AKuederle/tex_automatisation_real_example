@@ -1,0 +1,82 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8
+
+\begin{center}
+\sffamily
+\arrayrulecolor{myBlue}
+\arrayrulewidth=1pt
+\renewcommand{\arraystretch}{1.5}
+
+\begin{table}[htbp]
+\centering
+\large
+\begin{tabular}{|p{1.8cm}|p{2cm}|p{2.2cm}|p{1.8cm}|p{2.2cm}|p{1.8cm}|}
+ \multicolumn{6}{H}{\textcolor{white}{\bfseries User Information}}\\
+ \hline
+ \textcolor{myBlue}{Name}&Jason&\textcolor{myBlue}{age}&52&\textcolor{myBlue}{gender}&male\\
+ \hline
+ \textcolor{myBlue}{projectID}&PG15A067&\textcolor{myBlue}{project date}&20161016&\textcolor{myBlue}{report date}&20161216\\
+ \hline
+\end{tabular}
+\end{table}
+\end{center}
+
+
+
+\begin{center}
+\LARGE
+\textcolor{myBlue}{\bfseries Abstract}
+\end{center}
+
+\large
+\begin{center}
+\begin{tcolorbox}[colback=white, colframe=myBlue,title={$\vcenter{\hbox{\includegraphics[scale=0.22]{plus.png}}}$ \textcolor{white}{\bfseries These items are good choices.}}]
+% Just an idea to use multicol instead of a table. Should be easier to use later. However it will look horrible, if the text is to long to fit
+\begin{multicols}{4}    % 5 columns
+ A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
+ A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
+ A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
+ A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
+ A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
+\end{multicols}
+% \textcolor{white}{\bfseries These items are good choices.}}]
+% \arrayrulecolor{white}
+% \begin{tabular}{llllllllll}
+%  \hline
+%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+%  \hline
+%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+%  \hline
+%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+%  \hline
+%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+%  \hline
+%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+%  \hline
+%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+%  \hline
+% \end{tabular}
+\end{tcolorbox}
+
+~
+\large
+\begin{tcolorbox}[colback=white, colframe=myYellow, title={$\vcenter{\hbox{\includegraphics[scale=0.22]{minus.png}}}$
+\textcolor{white}{\bfseries These items can be both good and bad choices at this moment, pleas hold on.}}]
+\arrayrulecolor{white}
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXX}
+ \hline
+ A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+ \hline
+ A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+ \hline
+ A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+ \hline
+ A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
+ \hline
+ A01&apple&B04&german&B13&korean\\
+ \hline
+\end{tabularx}
+\end{tcolorbox}
+\end{center}
+
