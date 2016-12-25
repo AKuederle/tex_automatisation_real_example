@@ -32,12 +32,10 @@
 \begin{center}
 \begin{tcolorbox}[colback=white, colframe=myBlue,title={$\vcenter{\hbox{\includegraphics[scale=0.22]{plus.png}}}$ \textcolor{white}{\bfseries These items are good choices.}}]
 % Just an idea to use multicol instead of a table. Should be easier to use later. However it will look horrible, if the text is to long to fit
-\begin{multicols}{4}    % 5 columns
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
+\begin{multicols}{4}
+    \BLOCK{for key, item in blue_items | dictsort}
+        \VAR{key} \VAR{item['item name']}\\
+    \BLOCK{endfor}
 \end{multicols}
 % \textcolor{white}{\bfseries These items are good choices.}}]
 % \arrayrulecolor{white}
@@ -79,4 +77,3 @@
 \end{tabularx}
 \end{tcolorbox}
 \end{center}
-

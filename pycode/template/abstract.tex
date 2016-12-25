@@ -1,27 +1,25 @@
 \section*{\centering\huge{Abstract}}
-\subsection{\Large Fruit}
-\vspace{-10pt}
-\begin{tabularx}{\textwidth}{p{1.5cm}X}
-    \arrayrulecolor{myBlue}
-	\hline\\
-    \small{A0}1&
-    \large{\bfseries{appel(pingguo)}}\hfill
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-    \\[10pt]
-    \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.} \\[5pt]
-\hline\\[-10pt]
 
-\hline \\
-    \small{A0}1&\large{\bfseries{appel(pingguo)}}\\[10pt]
-    \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.} \\[5pt]
-    \hline\\[-10pt]
-\end{tabularx}
-\vspace{0pt}\\
-
-
+\BLOCK{for name, items in abstract_list | dictsort}
+    \subsection{\Large \VAR{name}}
+    \vspace{-10pt}
+    \BLOCK{for index, item in items  | dictsort}
+        \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{\VAR{index}}&
+            \large{\bfseries{\VAR{item['item name']}(\VAR{item['item alias']})}}\hfill
+            \BLOCK{set pic_list = ['1', '1', '1', '1', '1', '1', '1']}
+            \BLOCK{for pic in pic_list}
+                \BLOCK{if loop.index|string in item['icons list']}
+                    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{\VAR{pic}.png}}}$
+                \BLOCK{else}
+                    \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{\VAR{pic}.png}}}$}
+                \BLOCK{endif}
+            \BLOCK{endfor}
+            \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{\VAR{item['brief']}} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+    \BLOCK{endfor}
+\BLOCK{endfor}

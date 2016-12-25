@@ -4,10 +4,12 @@ from utils import get_template, compile_pdf_from_template
 
 def get_cover_abstract_data(path):
     data = pd.read_excel(path, index_col='index')
+    data['icons list'] = data['icons list'].str.split(',')
+    data['icons list'] = data['icons list'].fillna('[]')
 
     ### For Cover page
-    blue_items = data[data.color == 'blue'][['item name']]
-    yellow_items = data[data.color == 'yellow'][['item name']]
+    blue_items = data[data.color == 'blue'][['item name']].T.to_dict()
+    yellow_items = data[data.color == 'yellow'][['item name']].T.to_dict()
 
     ### For abstract
     categories = data.category.unique()
