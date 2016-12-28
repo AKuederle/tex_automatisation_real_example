@@ -1,55 +1,52 @@
 \section*{\centering Main Content}
 \setcounter{subsection}{0}
-\subsection{Fruit}
-\vspace{-10pt}
-\begin{tabularx}{\textwidth}{p{3cm}p{2.5cm}lR}
-    \arrayrulecolor{myBlue}
-    \hline\\
-    \large{\bfseries{appel}}&
-    \multicolumn{2}{l}{\bfseries{pingguo}}&
-    \hfill\bfseries{A01}\\[10pt]
-	\multicolumn{4}{p{\textwidth}}{this is definition paragraph for apple. this is definition paragraph for apple. this is definition paragraph for apple. this is definition paragraph for apple.}\\[20pt]
-	\hdashline[10pt/5pt] \\
-	start&
-    collapse&
-    \multicolumn{2}{l}{rate}\\
-    20160612&
-    3d&
-    4&
-    \hfill
-% * <tangzhixiong.1989@gmail.com> 2016-12-23T08:15:52.918Z:
-%
-% insert icons here should be  different from the "Abstract" part, you may mistake my previous notes.
-%  I have written you an email with more detailed descriptions.
-%
-% Re: Like this? Icon some-text icon some-text ... ? I know that are not the right pictures right now, but I am just using them to figure out the layout. The thing is, I am not sure if it is possible to fit all 7 icons with text next to each other.
-% ^ <tangzhixiong.1989@gmail.com> 2016-12-23T15:40:34.217Z:
-%
-% partially right. some- text explains the icon, you can find the information in the 1st slide in the PPT i sent to your mailbox.
-% However, only 3 icons at most will be inserted here, Hence,  do not worry about the fit issue.
-% Suppose a list containing 3 integers, each integer can be the value between 1 and 7. That's the column "icons short list" you can obtain through input file.
-%
-% ^.
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$ \noindent\parbox{1.5cm}{\hfill test}
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$ \noindent\parbox{1.5cm}{\hfill test}
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$ \noindent\parbox{1.5cm}{\hfill test}
-    \\[10pt]
-    \multicolumn{4}{l}{\bfseries{specific description}}\\[10pt]
-    \multicolumn{4}{l}{apple item 1}\\[10pt]
-
-	\hdashline[10pt/5pt] \\
-	start&
-    collapse&
-    rate& \\
-    20160724&
-    5d&
-    2&
-    \hfill
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$ \noindent\parbox{1.5cm}{\hfill test}
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$ \noindent\parbox{1.5cm}{\hfill test}
-    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$ \noindent\parbox{1.5cm}{\hfill test}
-    \\[10pt]
-    \multicolumn{4}{l}{\bfseries{specific description}}\\[10pt]
-    \multicolumn{4}{l}{apple item 1}\\[10pt]
-
-\end{tabularx}
+\BLOCK{set pic_desc_list = [['1', 'day1'], ['2', 'day2'], ['3', 'day3'], ['4', 'day4'], ['5', 'day5'], ['6', 'day6'], ['7', 'day7']]}
+\BLOCK{for name, items in main_list | dictsort}
+    \subsection{\Large \VAR{name}}
+    \vspace{-10pt}
+    \BLOCK{for index, item in items  | dictsort}
+        \begin{tabularx}{\textwidth}{p{4cm}lR}
+            \arrayrulecolor{myBlue}
+            \hline\\[-15pt]
+            \large{\bfseries{\VAR{item['item name']}}}&
+            \bfseries{\small{\VAR{item['item alias']}}}&
+            \hfill\bfseries{\VAR{index}}\\[10pt]
+            \multicolumn{3}{p{\textwidth}}{\VAR{item['definition']}}\\[5pt]
+            \hdashline[10pt/5pt]\\
+        \end{tabularx}\\[-10pt]
+        \BLOCK{for subitem in item['subentries']}
+            \begin{tabularx}{\textwidth}{p{3cm}p{2.5cm}lR}
+                \arrayrulecolor{myBlue}
+                \small{start}&
+                \small{collapse}&
+                \multicolumn{2}{l}{\small{rate}}\\
+                \small{\VAR{subitem['start']}}&
+                \small{\VAR{subitem['collapse']}}&
+                \small{\VAR{subitem['rate']}}&
+                \hfill
+                \BLOCK{for icon in subitem['icons short list']}
+                    $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{\VAR{pic_desc_list[icon|int-1][0]}.png}}}$ \noindent\parbox{1.5cm}{\hfill \small{\VAR{pic_desc_list[icon|int-1][1]}}}
+                \BLOCK{endfor}
+                \\[5pt]
+                \multicolumn{4}{l}{\bfseries{\small{Specific Description}}}\\
+                \multicolumn{4}{l}{\small{\VAR{subitem['specific description']}}}\\[5pt]
+                \hdashline[10pt/5pt]\\
+            \end{tabularx}\\[-10pt]
+        \BLOCK{endfor}
+        \BLOCK{if item['subentries']|length > 1}
+            General Description\\[-20pt]
+            \begin{itemize}
+                \setlength{\itemsep}{0pt}
+                \setlength{\parskip}{0pt}
+                \setlength{\parsep}{0pt}
+                \small{
+                \BLOCK{for subitem in item['subentries']}
+                    \item \VAR{subitem['specific description']}
+                \BLOCK{endfor}
+                }
+                \vspace*{5pt}
+                \item \VAR{item['brief']}
+            \end{itemize}
+        \BLOCK{endif}
+    \BLOCK{endfor}
+\BLOCK{endfor}

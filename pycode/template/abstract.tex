@@ -1,5 +1,5 @@
 \section*{\centering\huge{Abstract}}
-
+\BLOCK{set pic_list = ['1', '2', '3', '4', '5', '6', '7']}
 \BLOCK{for name, items in abstract_list | dictsort}
     \subsection{\Large \VAR{name}}
     \vspace{-10pt}
@@ -9,7 +9,6 @@
         	\hline\\
             \small{\VAR{index}}&
             \large{\bfseries{\VAR{item['item name']}(\VAR{item['item alias']})}}\hfill
-            \BLOCK{set pic_list = ['1', '2', '3', '4', '5', '6', '7']}
             \BLOCK{for pic in pic_list}
                 \BLOCK{if loop.index|string in item['icons list']}
                     $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{\VAR{pic}.png}}}$
