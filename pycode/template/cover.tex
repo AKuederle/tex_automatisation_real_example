@@ -31,38 +31,19 @@
 
 \large
 \begin{center}
-\begin{tcolorbox}[colback=white, colframe=myBlue, width=15.5cm, text width=15.5cm, arc=0mm, title=${\includegraphics[scale=0.22]{plus.png}}${\textcolor{white}{\bfseries These items are good choices.}}]
+\begin{tcolorbox}[colback=white, colframe=myBlue, width=15.5cm, text width=15.5cm, arc=0mm, title=$\vcenter{\hbox{\includegraphics[scale=0.22]{plus.png}}}${\textcolor{white}{\bfseries These items are good choices.}}]
 % Just an idea to use multicol instead of a table. Should be easier to use later. However it will look horrible, if the text is to long to fit
 % solve the fit issue by adjusting font size to small and set colorbox width to 15.5cm, layout is OK for my case
-\begin{multicols}{5}    % should be 5 columns
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
- A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
+\begin{multicols}{5}
+     \BLOCK{for key, item in blue_items | dictsort}
+         \VAR{key} \VAR{item['item name']}\\
+     \BLOCK{endfor}
 \end{multicols}
-% \textcolor{white}{\bfseries These items are good choices.}}]
-% \arrayrulecolor{white}
-% \begin{tabular}{llllllllll}
-%  \hline
-%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
-%  \hline
-%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
-%  \hline
-%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
-%  \hline
-%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
-%  \hline
-%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
-%  \hline
-%  A01&apple&B04&german&B13&korean&C08&marathon&E02&linux\\
-%  \hline
-% \end{tabular}
 \end{tcolorbox}
 
 ~
 \large
-\begin{tcolorbox}[[colback=white, colframe=myBlue, width=15.5cm, text width=15.5cm, arc=0mm, title=${\includegraphics[scale=0.22]{plus.png}}$
+\begin{tcolorbox}[colback=white, colframe=myYellow, width=15.5cm, text width=15.5cm, arc=0mm, title=$\vcenter{\hbox{\includegraphics[scale=0.22]{minus.png}}}$
 {\textcolor{white}{\bfseries These items can be both good and bad choices at this moment, pleas hold on.}}]
 \arrayrulecolor{white}
 % adopt the same strategy as you suggest for the red colorbox
@@ -88,4 +69,3 @@ A01 apple\\B04 german\\B13 korean\\C08 marathon\\E02 linux\\
 
 \end{tcolorbox}
 \end{center}
-
