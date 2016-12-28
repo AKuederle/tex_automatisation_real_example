@@ -39,14 +39,20 @@ def get_template(template_file):
 
 def compile_pdf_from_template(template_file, insert_variables, out_path):
     """Render a template file and compile it to pdf"""
+    out_path = os.path.abspath(out_path)
+    template_file = os.path.abspath(template_file)
+
+    # Get and render the template based on the path to the tempalte file.
     template = get_template(template_file)
     rendered_template = template.render(**insert_variables)
-    build_d = os.path.dirname(os.path.abspath(template_file))
-    print(build_d)
-    temp_out = os.path.join(build_d, "tmp")
+
+    # Save the rendered_template in the same folder as the template file as tmp.tex
+    temp_d = os.path.dirname(template_file)
+    temp_out = os.path.join(temp_d, "tmp")
     with open(temp_out+'.tex', "w") as f:  # saves tex_code to output file
         f.write(rendered_template)
 
-    os.chdir(build_d)
-    os.system('pdflatex -output-directory {} {}'.format(build_d, temp_out+'.tex'))
-    shutil.copy2(temp_out+".pdf", os.path.relpath(out_path))
+    # Call latex to compile tmp.tex
+    os.chdir(temp_d) # change directory into the template folder to fix relative path issues inside the latex file
+    os.system('pdflatex {}'.format(temp_out+'.tex'))
+    shutil.copy2(temp_out+".pdf", out_path)
