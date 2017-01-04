@@ -26,7 +26,7 @@ def get_main_data(path):
 
     def filter_categories(key):
         items = data[data.category == key]
-        new_keys = data.index.unique()
+        new_keys = items.index.unique()
         return {k:filter_items(k) for k in new_keys}
 
     data = pd.read_excel(path, index_col='index')
