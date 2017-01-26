@@ -3,18 +3,6 @@ import jinja2
 import os
 import shutil
 
-def get_options_from_file(path):
-    """Read a options file.
-
-    The pattern in the file is '%<key>:<value>'
-    """
-    with open(path) as f:
-        content = f.read()
-        keys = re.findall(r"%(.+):", content)
-        values = re. findall(r":\s*([\w\W]+?)\s*(?:%|$)", content)
-
-    options = dict(zip(keys, values))
-    return options
 
 def get_template(template_file):
     """Get a jinja template with latex tags.

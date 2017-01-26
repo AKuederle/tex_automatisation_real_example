@@ -2,6 +2,18 @@ import pandas as pd
 from utils import get_template, compile_pdf_from_template
 
 
+def get_options_from_file(path):
+    """Read a parameters configuration file. The pattern in the file is '<key>=<value>'
+    """
+    with open(path, encoding='utf-8') as f:
+        content = f.read()
+        keys = re.findall(r"(.*?)=.*", content)
+        values = re.findall(r".*=(.*?)\s+", content)
+
+    options = dict(zip(keys, values))
+    return options
+
+
 def get_cover_abstract_data(path):
     data = pd.read_excel(path, index_col='index')
     data['icons list'] = data['icons list'].str.split(',')
@@ -45,6 +57,9 @@ def get_main_data(path):
 
 
 all_variables = {}
+
+customer_data = get_options_from_file('./parameters_config.txt')
+all_variables =  {**all_variables, **customer_data}
 
 cover_abstract_data = get_cover_abstract_data('./cover+abstract.xlsx')
 all_variables = {**all_variables, **cover_abstract_data}
