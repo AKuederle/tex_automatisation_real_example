@@ -55,7 +55,6 @@ def get_main_data(path):
     return {'main_list': main_list}
 
 
-
 all_variables = {}
 
 customer_data = get_options_from_file('./parameters_config.txt')
