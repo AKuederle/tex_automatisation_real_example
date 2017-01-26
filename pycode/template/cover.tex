@@ -7,6 +7,8 @@
 \arrayrulewidth=1pt
 \renewcommand{\arraystretch}{1.5}
 
+
+%generate the right table as expected
 \begin{table}[htbp]
 \centering
 \large
@@ -14,15 +16,24 @@
 \begin{tabular}{|m{2.3cm}|m{2.5cm}|m{2.8cm}|m{2.2cm}|m{2.6cm}|m{2.2cm}|}
  \multicolumn{6}{H}{\textcolor{white}{\bfseries User Information}}\\
  \hline
- \textcolor{myBlue}{Name}&Jason&\textcolor{myBlue}{age}&52&\textcolor{myBlue}{gender}&male\\
+ \textcolor{myBlue}{Name}&\VAR{name}&\textcolor{myBlue}{age}&\VAR{age}&\textcolor{myBlue}{gender}&\VAR{gender}\\
  \hline
- \textcolor{myBlue}{projectID}&PG15A067&\textcolor{myBlue}{project date}&20161016&\textcolor{myBlue}{report date}&20161216\\
+ \textcolor{myBlue}{project ID}&\VAR{project_id}&\textcolor{myBlue}{project date}&\VAR{project_date}&\textcolor{myBlue}{report date}&\VAR{report_date}\\
  \hline
 \end{tabular}
 \end{table}
 \end{center}
 
-
+%layout nothing, cannt figure out why. Expect same table generated as above
+\begin{table}[htbp]
+\normalsize
+\centering
+\begin{multicols}{3}  
+    \BLOCK{for key, value in customer_data}
+        \VAR{key} \VAR{value}\\
+    \BLOCK{endfor}
+\end{multicols}
+\end{table}
 
 \begin{center}
 \LARGE

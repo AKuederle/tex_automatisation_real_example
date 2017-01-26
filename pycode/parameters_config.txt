@@ -2,6 +2,6 @@
 name=Jason
 age=52
 gender=Male
-projectID=PG161022			
-project date=2016/10/21		
-report date=2016/12/22		
+project_id=PG161022			
+project_date=2016/10/21		
+report_date=2016/12/22		
