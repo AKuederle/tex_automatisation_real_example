@@ -1,6 +1,7 @@
 \section*{\centering\huge{Abstract}}
 \BLOCK{set pic_list = ['1', '2', '3', '4', '5', '6', '7']}
-\BLOCK{for name, items in abstract_list | dictsort}
+\BLOCK{set my_order = {'languages': 1, 'veggies': 2, 'sports': 3, 'fruit': 4, 'systems': 5, 'planets': 6}}
+\BLOCK{for name, items in abstract_list |  my_dictsort("lambda x:my_order[x[0]]")}
     \subsection{\Large \VAR{name}}
     \vspace{-10pt}
     \BLOCK{for index, item in items  | dictsort}
