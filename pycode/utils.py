@@ -3,19 +3,6 @@ import jinja2
 import os
 import shutil
 
-
-def my_dictsort(value, by='key', reverse=False):
-
-    if by == 'key':
-        my_order = {'languages': 1, 'veggies': 2, 'sports': 3, 'fruit': 4, 'systems': 5, 'planets': 6}
-        sort_by = lambda x: mdOrder[x]
-
-    else:
-        sort_by = eval(by)
-
-    return sorted(value, key=sort_by, reverse=reverse)
-
-
 def get_template(template_file):
     """Get a jinja template with latex tags.
 
@@ -35,7 +22,6 @@ def get_template(template_file):
     	loader = jinja2.FileSystemLoader(['/',os.path.abspath('./template')])
     )
     template = latex_jinja_env.get_template(os.path.abspath(template_file))
-    latex_jinja_env.filters['my_dictsort'] = my_dictsort
     return template
 
 def compile_pdf_from_template(template_file, insert_variables, out_path):
