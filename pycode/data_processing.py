@@ -49,6 +49,7 @@ def get_main_data(path):
 
     ### For main
     categories = data.category.unique()
+    # when checked with Lint, line 53 treated as useless. Get the same layout when removing line 53
     items = data.index.unique()
     main_list = {k:filter_categories(k) for k in categories}
 
