@@ -61,6 +61,8 @@
 \arrayrulewidth=1pt
 \renewcommand{\arraystretch}{1.5}
 
+
+%generate the right table as expected
 \begin{table}[htbp]
 \centering
 \large
@@ -68,15 +70,21 @@
 \begin{tabular}{|m{2.3cm}|m{2.5cm}|m{2.8cm}|m{2.2cm}|m{2.6cm}|m{2.2cm}|}
  \multicolumn{6}{H}{\textcolor{white}{\bfseries User Information}}\\
  \hline
- \textcolor{myBlue}{Name}&Jason&\textcolor{myBlue}{age}&52&\textcolor{myBlue}{gender}&male\\
+ \textcolor{myBlue}{Name}&Jason&\textcolor{myBlue}{age}&52&\textcolor{myBlue}{gender}&Male\\
  \hline
- \textcolor{myBlue}{projectID}&PG15A067&\textcolor{myBlue}{project date}&20161016&\textcolor{myBlue}{report date}&20161216\\
+ \textcolor{myBlue}{project ID}&PG161022&\textcolor{myBlue}{project date}&2016/10/21&\textcolor{myBlue}{report date}&2016/12/22\\
  \hline
 \end{tabular}
 \end{table}
 \end{center}
 
-
+%layout nothing, cannt figure out why. Expect same table generated as above
+\begin{table}[htbp]
+\normalsize
+\centering
+\begin{multicols}{3}  
+    \end{multicols}
+\end{table}
 
 \begin{center}
 \LARGE
@@ -179,7 +187,493 @@
 
 \end{tcolorbox}
 \end{center}\section*{\centering\huge{Abstract}}
-    \subsection{\Large fruits}
+        \subsection{\Large languages}
+    \vspace{-10pt}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B01}&
+            \large{\bfseries{english(yingyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B02}&
+            \large{\bfseries{spanish(xibanyayu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Spanish is a part of the IberoRomance group of languages, which evolved from several dialects of Vulgar Latin in Iberia.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B03}&
+            \large{\bfseries{french(fayu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{French is an official language in 29 countries, most of which are members of la francophonie.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B04}&
+            \large{\bfseries{german(deyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{One of the major languages of the world, German is the most widely spoken native language in the European Union.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B05}&
+            \large{\bfseries{italian(yidaliyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Italian is a major European language, being one of the official languages of the Organisation for Security.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B06}&
+            \large{\bfseries{greek(xilayu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The Greek language holds an important place in the history of the Western world and Christianity.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B07}&
+            \large{\bfseries{arabic(alabo)}}\hfill
+                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Some of the spoken varieties are mutually unintelligible, both written and orally.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B08}&
+            \large{\bfseries{chinese(hanyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B09}&
+            \large{\bfseries{japaness(riyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Little is known of the languages prehistory, or when it first appeared in Japan. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B10}&
+            \large{\bfseries{portuegese(putaoyayu)}}\hfill
+                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Portuguese is part of the IberoRomance group that evolved from several dialects of Vulgar Latin.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B11}&
+            \large{\bfseries{russian(eyu)}}\hfill
+                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is the most geographically widespread language of Eurasia and the most widely spoken of the Slavic languages. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B12}&
+            \large{\bfseries{turkish(tuerqiyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The distinctive characteristics of Turkish are vowel harmony and extensive agglutination.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B13}&
+            \large{\bfseries{korean(chaoxianyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Korean has a few extinct relatives, which together with Korean itself form the Koreanic language family. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B14}&
+            \large{\bfseries{indian(yinduyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The indigenous people of northern and southeastern Bangladesh speak a variety of native languages.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{B15}&
+            \large{\bfseries{vietnamese(yuenanyu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is part of the Austroasiatic language family of which it has by far the most speakers.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \subsection{\Large veggies}
+    \vspace{-10pt}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{D01}&
+            \large{\bfseries{asparagus(lusun)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It was once classified in the lily family, like the related Allium species, onions and garlic. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{D02}&
+            \large{\bfseries{beets(tiancai)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is one of several of the cultivated varieties of Beta vulgaris grown. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{D03}&
+            \large{\bfseries{brocolli(huayecai)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Broccoli is classified in the Italica cultivar group of the species Brassica oleracea.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{D04}&
+            \large{\bfseries{cabbage(juanxincai)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Cabbage or headed cabbage comprising several cultivars of Brassica oleracea is a leafy green or purple biennial plant. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{D05}&
+            \large{\bfseries{carrot(huluobo)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The carrot Daucus carota subsp. sativus is a root vegetable, usually orange in colour. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \subsection{\Large sports}
+    \vspace{-10pt}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C01}&
+            \large{\bfseries{basketball(lanqiu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Basketball is a sport that is played by two teams of five players on a rectangular court. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C02}&
+            \large{\bfseries{football(zuqiu)}}\hfill
+                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Football is a family of team sports that involve, to varying degrees, kicking a ball with the foot to score a goal. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C03}&
+            \large{\bfseries{tennis(wangqiu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Tennis is a racket sport that can be played individually against a single opponent singles. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C04}&
+            \large{\bfseries{badminton(yumaoqiu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Badminton is a racquet sport played using racquets to hit a shuttlecock across a net.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C05}&
+            \large{\bfseries{rugby(ganlanqiu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{American flag rugby is designed for American children entering grades. } \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C06}&
+            \large{\bfseries{cricket(banqiu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Cricket is a batandball game played between two teams of eleven players on a cricket field.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C07}&
+            \large{\bfseries{volleyball(paiqiu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Volleyball is a team sport in which two teams of six players are separated by a net.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C08}&
+            \large{\bfseries{marathon(malasong)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The marathon was one of the original modern Olympic events in 1896, though the distance did not become standardized until 1921.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C09}&
+            \large{\bfseries{kungfu(gongfu)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The genesis of Chinese martial arts has been attributed to the need for selfdefense.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \begin{tabularx}{\textwidth}{p{1.5cm}X}
+            \arrayrulecolor{myBlue}
+        	\hline\\
+            \small{C10}&
+            \large{\bfseries{snooker(sinuoke)}}\hfill
+                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
+                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                        \\[10pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Snooker, generally regarded as having been invented in India by British Army officers.} \\[5pt]
+            \hline\\[-10pt]
+        \end{tabularx}
+            \subsection{\Large fruits}
     \vspace{-10pt}
             \begin{tabularx}{\textwidth}{p{1.5cm}X}
             \arrayrulecolor{myBlue}
@@ -501,249 +995,57 @@
             \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{They are native throughout the tropics with a few species extending into the semiwarm temperate zone.} \\[5pt]
             \hline\\[-10pt]
         \end{tabularx}
-        \subsection{\Large languages}
+            \subsection{\Large systems}
     \vspace{-10pt}
             \begin{tabularx}{\textwidth}{p{1.5cm}X}
             \arrayrulecolor{myBlue}
         	\hline\\
-            \small{B01}&
-            \large{\bfseries{english(yingyu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B02}&
-            \large{\bfseries{spanish(xibanyayu)}}\hfill
+            \small{E01}&
+            \large{\bfseries{windows(chuangkou)}}\hfill
                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
                                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Spanish is a part of the IberoRomance group of languages, which evolved from several dialects of Vulgar Latin in Iberia.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B03}&
-            \large{\bfseries{french(fayu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{French is an official language in 29 countries, most of which are members of la francophonie.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B04}&
-            \large{\bfseries{german(deyu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{One of the major languages of the world, German is the most widely spoken native language in the European Union.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B05}&
-            \large{\bfseries{italian(yidaliyu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Italian is a major European language, being one of the official languages of the Organisation for Security.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B06}&
-            \large{\bfseries{greek(xilayu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The Greek language holds an important place in the history of the Western world and Christianity.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B07}&
-            \large{\bfseries{arabic(alabo)}}\hfill
-                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Some of the spoken varieties are mutually unintelligible, both written and orally.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B08}&
-            \large{\bfseries{chinese(hanyu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B09}&
-            \large{\bfseries{japaness(riyu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
                                         \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Little is known of the languages prehistory, or when it first appeared in Japan. } \\[5pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{In computing, pointer paradigm for a user interface.} \\[5pt]
             \hline\\[-10pt]
         \end{tabularx}
             \begin{tabularx}{\textwidth}{p{1.5cm}X}
             \arrayrulecolor{myBlue}
         	\hline\\
-            \small{B10}&
-            \large{\bfseries{portuegese(putaoyayu)}}\hfill
-                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Portuguese is part of the IberoRomance group that evolved from several dialects of Vulgar Latin.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B11}&
-            \large{\bfseries{russian(eyu)}}\hfill
-                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is the most geographically widespread language of Eurasia and the most widely spoken of the Slavic languages. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B12}&
-            \large{\bfseries{turkish(tuerqiyu)}}\hfill
+            \small{E02}&
+            \large{\bfseries{linux(linniukesi)}}\hfill
                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
                                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
                                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
                                         \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The distinctive characteristics of Turkish are vowel harmony and extensive agglutination.} \\[5pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Linux was originally developed for personal computers based on the Intel x86 architecture.} \\[5pt]
             \hline\\[-10pt]
         \end{tabularx}
             \begin{tabularx}{\textwidth}{p{1.5cm}X}
             \arrayrulecolor{myBlue}
         	\hline\\
-            \small{B13}&
-            \large{\bfseries{korean(chaoxianyu)}}\hfill
+            \small{E03}&
+            \large{\bfseries{unix(younikesi)}}\hfill
                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
                                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Korean has a few extinct relatives, which together with Korean itself form the Koreanic language family. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B14}&
-            \large{\bfseries{indian(yinduyu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
+                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
                                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
                                                                 $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
                                         \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The indigenous people of northern and southeastern Bangladesh speak a variety of native languages.} \\[5pt]
+            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{From the power users or programmers perspective, Unix systems are characterized.} \\[5pt]
             \hline\\[-10pt]
         \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{B15}&
-            \large{\bfseries{vietnamese(yuenanyu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is part of the Austroasiatic language family of which it has by far the most speakers.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-        \subsection{\Large planets}
+            \subsection{\Large planets}
     \vspace{-10pt}
             \begin{tabularx}{\textwidth}{p{1.5cm}X}
             \arrayrulecolor{myBlue}
@@ -887,300 +1189,6 @@
                                                                 \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
                                         \\[10pt]
             \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Uranus is the seventh planet from the Sun.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-        \subsection{\Large sports}
-    \vspace{-10pt}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C01}&
-            \large{\bfseries{basketball(lanqiu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Basketball is a sport that is played by two teams of five players on a rectangular court. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C02}&
-            \large{\bfseries{football(zuqiu)}}\hfill
-                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Football is a family of team sports that involve, to varying degrees, kicking a ball with the foot to score a goal. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C03}&
-            \large{\bfseries{tennis(wangqiu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Tennis is a racket sport that can be played individually against a single opponent singles. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C04}&
-            \large{\bfseries{badminton(yumaoqiu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Badminton is a racquet sport played using racquets to hit a shuttlecock across a net.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C05}&
-            \large{\bfseries{rugby(ganlanqiu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{American flag rugby is designed for American children entering grades. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C06}&
-            \large{\bfseries{cricket(banqiu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Cricket is a batandball game played between two teams of eleven players on a cricket field.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C07}&
-            \large{\bfseries{volleyball(paiqiu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Volleyball is a team sport in which two teams of six players are separated by a net.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C08}&
-            \large{\bfseries{marathon(malasong)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The marathon was one of the original modern Olympic events in 1896, though the distance did not become standardized until 1921.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C09}&
-            \large{\bfseries{kungfu(gongfu)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The genesis of Chinese martial arts has been attributed to the need for selfdefense.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{C10}&
-            \large{\bfseries{snooker(sinuoke)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Snooker, generally regarded as having been invented in India by British Army officers.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-        \subsection{\Large systems}
-    \vspace{-10pt}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{E01}&
-            \large{\bfseries{windows(chuangkou)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{In computing, pointer paradigm for a user interface.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{E02}&
-            \large{\bfseries{linux(linniukesi)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Linux was originally developed for personal computers based on the Intel x86 architecture.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{E03}&
-            \large{\bfseries{unix(younikesi)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{From the power users or programmers perspective, Unix systems are characterized.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-        \subsection{\Large veggies}
-    \vspace{-10pt}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{D01}&
-            \large{\bfseries{asparagus(lusun)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$}
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It was once classified in the lily family, like the related Allium species, onions and garlic. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{D02}&
-            \large{\bfseries{beets(tiancai)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{It is one of several of the cultivated varieties of Beta vulgaris grown. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{D03}&
-            \large{\bfseries{brocolli(huayecai)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Broccoli is classified in the Italica cultivar group of the species Brassica oleracea.} \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{D04}&
-            \large{\bfseries{cabbage(juanxincai)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{Cabbage or headed cabbage comprising several cultivars of Brassica oleracea is a leafy green or purple biennial plant. } \\[5pt]
-            \hline\\[-10pt]
-        \end{tabularx}
-            \begin{tabularx}{\textwidth}{p{1.5cm}X}
-            \arrayrulecolor{myBlue}
-        	\hline\\
-            \small{D05}&
-            \large{\bfseries{carrot(huluobo)}}\hfill
-                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{1.png}}}$}
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{2.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{3.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{4.png}}}$
-                                                                \phantom{$\vcenter{\hbox{\includegraphics[height=15px, width=15px]{5.png}}}$}
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{6.png}}}$
-                                                                $\vcenter{\hbox{\includegraphics[height=15px, width=15px]{7.png}}}$
-                                        \\[10pt]
-            \large{\bfseries{brief}}&\noindent\parbox[c]{\hsize}{The carrot Daucus carota subsp. sativus is a root vegetable, usually orange in colour. } \\[5pt]
             \hline\\[-10pt]
         \end{tabularx}
     \section*{\centering Main Content}
